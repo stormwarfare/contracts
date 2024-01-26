@@ -1,5 +1,5 @@
 // SPDX-License-Identifier: MIT
-pragma solidity 0.8.2;
+pragma solidity 0.8.23;
 
 /**
  * @dev Interface of the ERC20 standard as defined in the EIP.
@@ -469,9 +469,9 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     ) internal virtual {}
 }
 
-contract JanToken is ERC20 {
+contract StormWarfare is ERC20 {
 
-    constructor(address _initialWallet) ERC20("Jan Token", "JAN") {
+    constructor(address _initialWallet) ERC20("JANUS TOKEN", "JAN") {
         _mint( _initialWallet, (10 ** 9) * (10 ** decimals()));
     }
 }

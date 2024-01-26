@@ -469,7 +469,7 @@ contract ERC20 is Context, IERC20, IERC20Metadata {
     ) internal virtual {}
 }
 
-contract StormWarfare is ERC20 {
+contract JanusToken is ERC20 {
 
     constructor(address _initialWallet) ERC20("JANUS TOKEN", "JAN") {
         _mint( _initialWallet, (10 ** 9) * (10 ** decimals()));
